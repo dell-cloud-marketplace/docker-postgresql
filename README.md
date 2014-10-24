@@ -6,7 +6,7 @@ This blueprint installs [PostgreSQL](http://www.postgresql.org/) - a cross platf
     * [Basic Example](#basic-example)
     * [Advanced Example 1](#advanced-example-1)
 * [Administration](#administration)
-    * [Connecting to MongoDB](#connecting-to-postgresql)
+    * [Connecting to PostgreSQL](#connecting-to-postgresql)
 * [Reference](#reference)
     * [Image Details](#image-details)
     * [Dockerfile Settings](#dockerfile-settings)
@@ -97,7 +97,7 @@ Attribute         | Value
 ------------------|------
 Based on          | 
 Github Repository | [https://github.com/ghostshark/docker-postgresql](https://github.com/ghostshark/docker-postgresql)
-Pre-built Image   | [https://registry.hub.docker.com/u/dell/mongodb](https://registry.hub.docker.com/u/dell/postgresql) 
+Pre-built Image   | [https://registry.hub.docker.com/u/dell/postgresql](https://registry.hub.docker.com/u/dell/postgresql) 
 
 <a name="dockerfile-settings"></a>
 ### Dockerfile Settings
