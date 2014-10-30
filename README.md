@@ -15,7 +15,7 @@ PostgreSQL | 9.3.5      | Database
 To start your container with:
 
 * A named container ("postgresql")
-* Host port 5432 mapped to container port 5432 (default PostgreSQL admin port)
+* Host port 5432 mapped to container port 5432 (default database port)
 
 Do:
 
@@ -53,6 +53,6 @@ You can now test your new postgres user password when prompted:
 
 ### Image Details
 
-Based on 
+Based on [docker-library/postgres](https://github.com/docker-library/postgres)
 
 Pre-built Image   | [https://registry.hub.docker.com/u/dell/postgresql](https://registry.hub.docker.com/u/dell/postgresql) 
