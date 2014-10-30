@@ -2,7 +2,7 @@ FROM ubuntu:trusty
 MAINTAINER Dell Cloud Market Place <Cloud_Marketplace@dell.com>
 
 
-# Set nvironment variable for package install
+# Set environment variable for package install
 ENV DEBIAN_FRONTEND noninteractive
 
 # Install packages
@@ -22,8 +22,10 @@ RUN locale-gen en_GB.UTF-8
 RUN dpkg-reconfigure locales
 
 
-# Adjust PostgreSQL configuration so that remote connections to the database are possible. 
-RUN echo "host all  all    0.0.0.0/0  md5" >> /etc/postgresql/9.3/main/pg_hba.conf
+# Adjust PostgreSQL configuration,
+# so that remote connections to the database are possible. 
+RUN echo "host all  all    0.0.0.0/0  md5" >> \
+ /etc/postgresql/9.3/main/pg_hba.conf
 RUN echo "listen_addresses='*'" >> /etc/postgresql/9.3/main/postgresql.conf
 
 
