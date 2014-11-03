@@ -11,7 +11,7 @@ PostgreSQL | 9.3.5      | Database
 
 ## Usage
 
-### Start the container
+### Start the Container
 To start your container with:
 
 * A named container ("postgresql")
