@@ -19,7 +19,7 @@ To start your container with:
 
 Do:
 
-    docker run -d -p 5432:5432 --name postgresql dell/postgresql
+    sudo docker run -d -p 5432:5432 --name postgresql dell/postgresql
 
 A new admin user, with all privileges, will be created in PostgreSQL with a random password. To get the password, check the container logs (```sudo docker logs postgresql```). You will see output like the following:
 
@@ -46,7 +46,7 @@ To start your image with a specific PostgreSQL postgres password, instead of a r
 
 You can now test your new postgres user password when prompted:
 
-    psql -h 127.0.0.1 --p 5432 --username=postgres
+    psql -h 127.0.0.1 -p 5432 --username=postgres
 
 
 ## Reference
