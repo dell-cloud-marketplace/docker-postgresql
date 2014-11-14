@@ -28,6 +28,10 @@ RUN echo "host all  all    0.0.0.0/0  md5" >> \
  /etc/postgresql/9.3/main/pg_hba.conf
 RUN echo "listen_addresses='*'" >> /etc/postgresql/9.3/main/postgresql.conf
 
+RUN mkdir -p /tmp/etc/postgresql/ /tmp/var/lib/postgresql
+RUN cp -R /etc/postgresql/9.3 /tmp/etc/postgresql/
+RUN cp -R /var/lib/postgresql/9.3 /tmp/var/lib/postgresql
+
 
 # Add VOLUMEs to allow backup of config, logs and databases
 VOLUME	["/etc/postgresql", "/var/log/postgresql", "/var/lib/postgresql"]
