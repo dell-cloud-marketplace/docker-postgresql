@@ -52,7 +52,7 @@ You can now test your new postgres user password when prompted:
 
 Start your container with:
 - Three data volumes (which will survive a restart or recreation of the container). The PostgreSQL data is available in **/var/lib/postgresql** on the host. The configuration files are available in **/etc/postgresql** on the host. The PostgreSQL logs are available in **/var/log/postgresql** on the host.
-- A specific PostgreSQL password for user postgres. A preset password can be defined instead of a randomly generated one, this is done by setting the environment variable POSTGRES_PASS to your specific password when running the container.
+- A specific PostgreSQL password for user postgres. A preset password can be defined instead of a randomly generated one, this is done by setting the environment variable **POSTGRES_PASS** to your specific password when running the container.
 
 ```no-highlight
        sudo docker run -d \
