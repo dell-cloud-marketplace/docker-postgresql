@@ -54,13 +54,15 @@ Start your container with:
 - Three data volumes (which will survive a restart or recreation of the container). The PostgreSQL data is available in **/var/lib/postgresql** on the host. The configuration files are available in **/etc/postgresql** on the host. The PostgreSQL logs are available in **/var/log/postgresql** on the host.
 - A specific PostgreSQL password for user postgres. A preset password can be defined instead of a randomly generated one, this is done by setting the environment variable POSTGRES_PASS to your specific password when running the container.
 
-    sudo docker run -d \
-     --name="postgresql" \
-     -v /etc/postgresql:/etc/postgresql \
-     -v /var/log/postgresql:/var/log/postgresql \
-     -v /var/lib/postgresql:/var/lib/postgresql \
-     -p 5432:5432 \
-     -e POSTGRES_PASS="mypass" dell/postgresql
+```no-highlight
+       sudo docker run -d \
+        --name="postgresql" \
+        -v /etc/postgresql:/etc/postgresql \
+        -v /var/log/postgresql:/var/log/postgresql \
+        -v /var/lib/postgresql:/var/lib/postgresql \
+        -p 5432:5432 \
+        -e POSTGRES_PASS="mypass" dell/postgresql
+```
 
 You can then connect to the admin console...
 
