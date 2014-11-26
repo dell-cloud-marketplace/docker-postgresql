@@ -2,7 +2,7 @@
 This is a base Docker image to run a [PostgreSQL](http://www.postgresql.org/) database server. PostgreSQL is a cross platform object-relational database management system (ORDBMS).
 
 ## Components
-The software stack comprises of the below component details:
+The software stack comprises the following component details:
 
 Name       | Version    | Description
 -----------|------------|------------------------------
@@ -55,13 +55,13 @@ Start your container with:
 - A specific PostgreSQL password for user postgres. A preset password can be defined instead of a randomly generated one, this is done by setting the environment variable `POSTGRES_PASS` to your specific password when running the container.
 
 ```no-highlight
-       sudo docker run -d \
-        --name="postgresql" \
-        -v /etc/postgresql:/etc/postgresql \
-        -v /var/log/postgresql:/var/log/postgresql \
-        -v /var/lib/postgresql:/var/lib/postgresql \
-        -p 5432:5432 \
-        -e POSTGRES_PASS="mypass" dell/postgresql
+sudo docker run -d \
+    --name="postgresql" \
+    -v /etc/postgresql:/etc/postgresql \
+    -v /var/log/postgresql:/var/log/postgresql \
+    -v /var/lib/postgresql:/var/lib/postgresql \
+    -p 5432:5432 \
+    -e POSTGRES_PASS="mypass" dell/postgresql
 ```
 
 You can then connect to the admin console...
@@ -74,4 +74,4 @@ You can then connect to the admin console...
 
 Based on [docker-library/postgres](https://github.com/docker-library/postgres)
 
-Pre-built Image   | [https://registry.hub.docker.com/u/dell/postgresql](https://registry.hub.docker.com/u/dell/postgresql) 
+Pre-built Image | [https://registry.hub.docker.com/u/dell/postgresql](https://registry.hub.docker.com/u/dell/postgresql) 
