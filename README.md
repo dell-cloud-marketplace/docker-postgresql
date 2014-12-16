@@ -42,7 +42,7 @@ You can then connect to the admin console...
 ### Advanced Example 1
 To start your image with a specific PostgreSQL postgres password, instead of a randomly generated one, set environment variable `POSTGRES_PASS` when running the container:
 
-    sudo docker run -d -p 5432:5432 -e POSTGRES_PASS="mypass" dell/postgresql
+    sudo docker run -d -p 5432:5432 -e POSTGRES_PASS="mypass" --name postgresql dell/postgresql
 
 You can now test your new postgres user password when prompted:
 
