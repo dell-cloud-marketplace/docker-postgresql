@@ -70,6 +70,12 @@ You can then connect to the admin console...
     
 ## Reference
 
+### Environmental Variables
+
+Variable      | Default  | Description
+--------------|----------|-------------------------------
+POSTGRES_PASS | *random* | Password for user **postgres**
+
 ### Image Details
 
 Based on [docker-library/postgres](https://github.com/docker-library/postgres)
