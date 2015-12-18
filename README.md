@@ -7,7 +7,7 @@ The software stack comprises the following component details:
 Name       | Version    | Description
 -----------|------------|------------------------------
 Ubuntu     | Trusty     | Operating system
-PostgreSQL | 9.3.5      | Database
+PostgreSQL | 9.3        | Database
 
 ## Usage
 
@@ -69,6 +69,12 @@ You can then connect to the admin console...
     psql -h 127.0.0.1 -p 5432 --username=postgres
     
 ## Reference
+
+### Environmental Variables
+
+Variable      | Default  | Description
+--------------|----------|-------------------------------
+POSTGRES_PASS | *random* | Password for user **postgres**
 
 ### Image Details
 

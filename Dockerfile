@@ -42,6 +42,9 @@ RUN chmod 755 /*.sh
 # Add VOLUMEs to allow backup of config, logs and databases
 VOLUME	["/etc/postgresql", "/var/log/postgresql", "/var/lib/postgresql"]
 
+# Environnmental variables.
+ENV POSTGRES_PASS ""
+
 # Expose PostgreSQL port 5432
 EXPOSE 5432
 
